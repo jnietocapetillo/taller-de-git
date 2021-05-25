@@ -1,6 +1,6 @@
 <?php
 
-    echo 'Hola, soy Javier Nieto\n';
-    echo 'Hola {$argv[1]}\n';
-
+    $nombre = isset($argv[1]) ? $argv[1] : "Javier Nieto";
+    @print 'Hola, {$nombre}\n';
+    
 ?>
